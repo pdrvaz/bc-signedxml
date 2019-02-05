@@ -74,6 +74,8 @@ namespace Org.BouncyCastle.Crypto.Xml
                 // remove attribute from this method when removing them
                 case "http://www.w3.org/2000/09/xmldsig#sha1":
                     return DigestUtilities.GetDigest("SHA-1");
+                case "http://www.w3.org/2001/04/xmlenc#sha256":
+                    return DigestUtilities.GetDigest("SHA-256");
                 case "MD5":
                     return DigestUtilities.GetDigest("MD5");
                 case "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr3411":
